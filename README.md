@@ -13,11 +13,3 @@ The stableSort function will use a custom algorithm if necessary
 	var myArray = [1, 5, 3]
 	myArray.stableSort(function(a,b) { });
 
-
-Todo
-----
-
-- Add default sort function (is that ever useful?)
-- Add test
-- Add demo
-

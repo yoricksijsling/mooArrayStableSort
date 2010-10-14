@@ -2,5 +2,5 @@ name: Array.stableSort
 author: yoricksijsling
 category: Utilities
 tags: [array, sort, sorting, stable, algorithm, mergesort]
-
+demo: http://jsfiddle.net/3RQuy/
 
