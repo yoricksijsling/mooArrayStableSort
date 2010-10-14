@@ -1,6 +1,6 @@
 name: Array.stableSort
 author: yoricksijsling
-current: v1.0
-category: utilities
+category: Utilities
 tags: [array, sort, sorting, stable, algorithm, mergesort]
+
 
