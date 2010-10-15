@@ -28,7 +28,8 @@ provides:
     Array.implement({
         
         stableSort: function(compare) {
-            // Maybe replace this with some real feature recognition?
+            // I would love some real feature recognition. Problem is that an unstable algorithm sometimes/often gives the same result as an unstable algorithm.
+            // TODO: exclude opera 10, mergesort is only needed for opera 9
             return (Browser.chrome || Browser.firefox2 || Browser.opera) ? this.mergeSort(compare) : this.sort(compare);
         },
         
