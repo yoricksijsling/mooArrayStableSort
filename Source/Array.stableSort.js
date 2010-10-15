@@ -29,7 +29,7 @@ provides:
         
         stableSort: function(compare) {
             // Maybe replace this with some real feature recognition?
-            return Browser.chrome ? this.mergeSort(compare, true) : this.sort(compare);
+            return (Browser.chrome || Browser.firefox2 || Browser.opera) ? this.mergeSort(compare) : this.sort(compare);
         },
         
         mergeSort: function(compare, token) {
