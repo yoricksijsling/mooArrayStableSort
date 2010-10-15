@@ -21,14 +21,17 @@ You'll need an array with test data
 	var myArray = [ [1,5], [3,3], [2,7], [1,4], [1,8]];
 
 Now sort on the first item
+
 	myArray.stableSort(function(a,b) {
-		return a[0] > b[0] ? 1 : (a[0] < b[0] ? -1 : 0);
+	  return a[0] > b[0] ? 1 : (a[0] < b[0] ? -1 : 0);
 	});
 
 Result
+
 	[ [1,5], [1,4], [1,8], [2,7], [3,3] ];
 
 Note that an unstable sort algorithm might just as well have given any of these
+
 	[ [1,4], [1,8], [1,5], [2,7], [3,3] ];
 	[ [1,8], [1,4], [1,5], [2,7], [3,3] ];
 	[ [1,4], [1,5], [1,8], [2,7], [3,3] ];
