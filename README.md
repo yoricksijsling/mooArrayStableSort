@@ -1,7 +1,7 @@
 Array.stableSort
 ================
 
-Adds a stable sort function to Google Chrome and other browsers
+Adds a stable sort function to Google Chrome and other browsers.
 A stable sort behaves more intuitive when you're sorting a dataset multiple times on different keys (e.g. a sortable table) and the result is always predictable.
 
 How to use
