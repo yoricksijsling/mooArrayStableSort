@@ -29,8 +29,7 @@ provides:
         
         stableSort: function(compare) {
             // I would love some real feature recognition. Problem is that an unstable algorithm sometimes/often gives the same result as an unstable algorithm.
-            // TODO: exclude opera 10, mergesort is only needed for opera 9
-            return (Browser.chrome || Browser.firefox2 || Browser.opera) ? this.mergeSort(compare) : this.sort(compare);
+            return (Browser.chrome || Browser.firefox2 || Browser.opera9) ? this.mergeSort(compare) : this.sort(compare);
         },
         
         mergeSort: function(compare, token) {
