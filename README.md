@@ -1,7 +1,7 @@
 Array.stableSort
 ================
 
-Adds a stable sort function to Google Chrome and other browsers.
+Adds a stable sort function to older browsers. Since Google Chrome 12, all browsers have stable sorting by default.
 A stable sort behaves more intuitive when you're sorting a dataset multiple times on different keys (e.g. a sortable table) and the result is always predictable.
 
 How to use
@@ -33,7 +33,7 @@ Notes
 
 More information on stable sorting on <http://en.wikipedia.org/wiki/Sorting_algorithm#Stability>
 
-Only Chrome and old versions of Firefox(< 3) and Opera(< 10) use an unstable sort algorithm. All other browsers (at least Firefox 3+, Internet Explorer, Safari and Opera 10+) use a stable sort.
+Only old versions of Chrome(< 12), Firefox(< 3) and Opera(< 10) use an unstable sort algorithm. All other browsers (at least Firefox 3+, Internet Explorer, Safari and Opera 10+) use a stable sort.
 
 It's implemented using a merge sort. In Chrome 5 it's about half as fast as the default sort (firefox and opera are slower). Time complexity is the same, O(n log n). The default sort will be used whenever possible.
 
